@@ -10,7 +10,7 @@ data <- read.table(datafile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec="
 subSetData <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 #viewdata head(subSetData)
-#dimdata dim(subsetdata)
+#dimdata dim(subSetData)
 
 global_active_power <- as.numeric(subSetData$Global_active_power)
 png("plot1.png", width=480, height=480)
